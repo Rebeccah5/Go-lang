@@ -30,8 +30,43 @@ func main() {
 			continue
 		}
 		fmt.Println(h)
-	}	
+	}
+	
+	// calling functions
+	a:= 20 
+	b:= 8
+	response := addition(a, b)
+	fmt.Printf("If you add %v + %v you get %v \n", a, b, response)
+
+	sub_response := substration(a, b)
+	fmt.Printf("Substracting %v from %v the answer is %v \n", b, a, sub_response)
+
+	mult_response := multiplication(a, b)
+	fmt.Printf("The multiple of %v and %v is %v \n", a, b, mult_response)
+
+	div_response := division(a,b)
+	fmt.Printf("%v / %v is  %v", a, b, div_response)
 }
+
+func addition(a int, b int)int{
+	return a + b
+}
+
+func substration(a int, b int)int{
+	return a - b
+}
+
+func multiplication(a int, b int)int{
+	return a * b
+}
+
+func division(a int, b int)int{
+	return a % b
+}
+
+
+
+
 
 
 
