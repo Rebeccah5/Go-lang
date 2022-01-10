@@ -46,6 +46,8 @@ func main() {
 
 	div_response := division(a,b)
 	fmt.Printf("%v / %v is  %v", a, b, div_response)
+
+	fizz_buzz()
 }
 
 func addition(a int, b int)int{
@@ -64,6 +66,24 @@ func division(a int, b int)int{
 	return a % b
 }
 
+// Fizz buzz
+
+func fizz_buzz(){
+	for x:= 1; x <= 100; x++ {
+		if x % 3 == 0{
+			fmt.Println("Fizz")
+		} else if x % 5 == 0{
+			fmt.Print("Buzz")
+		} else if x % 2 == 0 {
+			fmt.Println("FizzBuzz")
+		} else {
+			if x%3 !=0 && x%5 !=0{
+				fmt.Println(x)
+			}			
+		}
+		fmt.Printf("\n")
+	}
+}
 
 
 
